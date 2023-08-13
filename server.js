@@ -7,7 +7,7 @@ var SerialPort = serialport.SerialPort;
 
 // Don't set the serialport on development
 if (process.env.NODE_ENV != "development"){
-  var sp = new SerialPort('/dev/ttyUSB0', { baudrate: 9600 });
+  var sp = new SerialPort('/dev/ttyUSB3', { baudrate: 115200 });
 }
 
 // All the values we are getting from the ECU
